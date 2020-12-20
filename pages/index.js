@@ -1,27 +1,45 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
-// import HookCounter from '../components/classCounter'
-// import HookCounterTwo from '../components/hookCounterTwo'
-// import HookCounterThree from '../components/hookCounterThree'
-// import HookCounterFour from '../components/hookCounterFour'
-// import UseEffectHookCounter from '../components/useEffectHookCounterOne'
-// import DataFetching from '../components/dataFetching'
-import ComponentC from '../components/componentC'
- 
-// passing props to in nested component (single value)
-export const UserContext = React.createContext()
+import Greet from '../components/greet'
+import Welcome from '../components/welcome'
+import Hello from '../components/hello'
+import Propy from '../components/propy'
+import Message from '../components/message'
 
-// passing props to in nested component (multiple value)
-export const ChannelContext = React.createContext
+// Thanks Vishwas (codeevolution) you are awesome <3
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <UserContext.Provider value={'Vishwas'}>
-        <ChannelContext.Provider value={'codevolution'}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+
+      {/* Using functional & fat arrow components */}
+      <Greet />
+
+      {/* Using class components */}
+      <Welcome />
+
+      {/* Using Jsx */}
+      <Hello />
+
+      {/* Using Props */}
+      <Propy name="Lewis" heroName="Jesus best friend">
+        <p>children props can be written here as well</p>
+      </Propy>
+
+      <Propy name="CodeArt" heroName="Yeshua best friend">
+        <button>Action</button>
+      </Propy>
+      <Propy name="CodeDisrupt" heroName="Emmanuel best friend" />
+
+      {/* Using props in class components */}
+      <Welcome name="Zeky" heroName="Jesus best friend" />
+      <Welcome name="Zeky" heroName="Yeshua best friend" />
+      <Welcome name="Zeky" heroName="Emmanuel best friend" />
+
+      {/* Props are pass to the children */}
+      {/* States are managed within the components */}
+      <Message />
+
     </div>
   )
 }
