@@ -15,6 +15,7 @@ class Message extends Component {
             message: 'Thank you for subscribing'
         })
     }
+    
     render() {
         return (
             <div>

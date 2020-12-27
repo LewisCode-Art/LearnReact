@@ -5,6 +5,12 @@ import Welcome from '../components/welcome'
 import Hello from '../components/hello'
 import Propy from '../components/propy'
 import Message from '../components/message'
+import Counter from '../components/counter'
+import DestructuringPropy from '../components/destructuringPropy'
+import DestructuringClassPropy from '../components/destructuringClassPropy'
+import FunctionClick from '../components/functionClick'
+import ClassClick from '../components/classClick'
+import EventBind from '../components/eventBind'
 
 // Thanks Vishwas (codeevolution) you are awesome <3
 
@@ -39,6 +45,23 @@ export default function Home() {
       {/* Props are pass to the children */}
       {/* States are managed within the components */}
       <Message />
+
+      {/* Using states in functional components */}
+      <Counter />
+
+      {/* Destructuring functional component props */}
+      <DestructuringPropy name="CodeArt" heroName="Yeshua best friend" />
+
+      {/* Destructuring class component props */}
+      <DestructuringClassPropy name="Zeky" heroName="Emmanuel best friend" />
+
+      {/* Learning event handlers in funtional components */}
+      <FunctionClick />
+
+      {/* Learning event handlers in class components */}
+      <ClassClick />
+
+      <EventBind/>
 
     </div>
   )
