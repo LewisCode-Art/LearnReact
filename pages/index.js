@@ -11,6 +11,9 @@ import DestructuringClassPropy from '../components/destructuringClassPropy'
 import FunctionClick from '../components/functionClick'
 import ClassClick from '../components/classClick'
 import EventBind from '../components/eventBind'
+import ParentComponent from '../components/ParentComponent'
+import UserGreeting from '../components/userGreeting'
+import NameList from '../components/nameList'
 
 // Thanks Vishwas (codeevolution) you are awesome <3
 
@@ -61,7 +64,16 @@ export default function Home() {
       {/* Learning event handlers in class components */}
       <ClassClick />
 
-      <EventBind/>
+      {/* Learning Event Handling */}
+      <EventBind />
+
+      {/* Learning Nested Event Handling */}
+      <ParentComponent />
+
+      {/* Learning conditional rendering */}
+      <UserGreeting />
+
+      <NameList />
 
     </div>
   )
