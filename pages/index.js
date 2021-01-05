@@ -73,6 +73,7 @@ export default function Home() {
       {/* Learning conditional rendering */}
       <UserGreeting />
 
+      {/* Learning Lists */}
       <NameList />
 
     </div>
