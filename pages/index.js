@@ -14,6 +14,9 @@ import EventBind from '../components/eventBind'
 import ParentComponent from '../components/ParentComponent'
 import UserGreeting from '../components/userGreeting'
 import NameList from '../components/nameList'
+import Form from '../components/form'
+import LifeCyleA from '../components/lifeCyleA'
+import ParentComp from '../components/parentComp'
 
 // Thanks Vishwas (codeevolution) you are awesome <3
 
@@ -75,6 +78,18 @@ export default function Home() {
 
       {/* Learning Lists */}
       <NameList />
+
+      {/* Learning form handling */}
+      <Form />
+
+      {/* Learning component execution phrases*/}
+      {/* <LifeCyleA /> */}
+
+      {/* PureComponent */}
+      {/* <ParentComp /> */}
+
+      {/*Learning PureComponent using functions */}
+      <ParentComp />
 
     </div>
   )
