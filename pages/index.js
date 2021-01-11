@@ -15,8 +15,9 @@ import ParentComponent from '../components/ParentComponent'
 import UserGreeting from '../components/userGreeting'
 import NameList from '../components/nameList'
 import Form from '../components/form'
-import LifeCyleA from '../components/lifeCyleA'
-import ParentComp from '../components/parentComp'
+import RefsDemo from '../components/refsDemo'
+import Hero from '../components/hero'
+import ErrorBoundary from '../components/errorBoundary'
 
 // Thanks Vishwas (codeevolution) you are awesome <3
 
@@ -89,8 +90,20 @@ export default function Home() {
       {/* <ParentComp /> */}
 
       {/*Learning PureComponent using functions */}
-      <ParentComp />
+      {/* <ParentComp /> */}
 
+      {/* Learning Refs */}
+      <RefsDemo />
+
+      {/* Learning Erro boundary */}
+      <ErrorBoundary>
+        <Hero heroName='Batman' />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName='Superman' />
+        {/* <Hero heroName='Joker' /> */}
+      </ErrorBoundary>
     </div>
   )
 }
