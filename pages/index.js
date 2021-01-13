@@ -19,7 +19,6 @@ import RefsDemo from '../components/refsDemo'
 import Hero from '../components/hero'
 import ErrorBoundary from '../components/errorBoundary'
 import GetLists from '../components/getList.js'
-import PostList from '../components/postList'
 
 // Thanks Vishwas (codeevolution) you are awesome <3
 
