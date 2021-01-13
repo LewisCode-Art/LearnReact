@@ -18,6 +18,8 @@ import Form from '../components/form'
 import RefsDemo from '../components/refsDemo'
 import Hero from '../components/hero'
 import ErrorBoundary from '../components/errorBoundary'
+import GetLists from '../components/getList.js'
+import PostList from '../components/postList'
 
 // Thanks Vishwas (codeevolution) you are awesome <3
 
@@ -104,6 +106,10 @@ export default function Home() {
         <Hero heroName='Superman' />
         {/* <Hero heroName='Joker' /> */}
       </ErrorBoundary>
+
+      {/* Learning Data Fetching From API */}
+      <GetLists />
+
     </div>
   )
 }
