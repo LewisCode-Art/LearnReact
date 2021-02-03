@@ -1,0 +1,9 @@
+.cardWidth{
+    width: 18rem;
+}
+.cardImg{
+    width: 30px;
+    height: 110%;
+    object-fit: cover;
+    background-size: cover;
+}
